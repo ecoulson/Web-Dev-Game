@@ -19,6 +19,11 @@ while running:
 		if event.type == pygame.QUIT:
 			running = False
 	screen.fill(WHITE)
+
+	pygame.draw.rect(screen, RED, [55, 200, 100, 70],0)
+	pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
+	pygame.draw.ellipse(screen, BLUE, [20,20,250,100], 2)
+
 	pygame.display.flip()
 	clock.tick(60)
 
